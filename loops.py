@@ -6,27 +6,37 @@ def loop():
     # queue videos
     #what is iteration?
     #what are for loops?
-  # a = 1
-  # while a < 10:
-  #   print(a)
-  #   a = a + 1
+    # a = 1
+    # while a < 10:
+    #   print(a)
+    #   a = a + 1
 
-  # num_list = [1,2,3,4,5,6,7,8,9,10]
-  # sum = 0
-  # for num in num_list:
-  #   sum = sum + num
-  # print(sum)
-  # names = ["mary", "john", "david", "thomas", "janette"]
+    # num_list = [1,2,3,4,5,6,7,8,9,10]
+    # sum = 0
+    # for num in num_list:
+    #   sum = sum + num
+    # print(sum)
+    # names = ["mary", "john", "david", "thomas", "janette"]
 
-  # dictionaries
-  dic={"key1": "a", "key2":"b", "key3": "c"}
+    # dictionaries
+    dic = {"key1": "a", "key2": "b", "key3": "c"}
 
-  for item in dic:
-    print(item)
-  
-  # for name in names:
-  #   if name.startswith("j"):
-  #     print(f"this {name} stats with j")
+    for item in dic.items():
+        # .items give you the values
+        print(item)
+
+        for a, b in dic.items():
+            print(a, b)
+
+            # while loops
+            coins = 30
+            while coins < 40:
+                print(f"I have {coins} coins")
+                coins += 1
+
+    # for name in names:
+    #   if name.startswith("j"):
+    #     print(f"this {name} stats with j")
     # For Loops Practice #1
     # Using For loops, greet all members of a class, printing "Hello" + their name.
 
